@@ -319,15 +319,7 @@ sub splitit {
 
 .diff-new { background-color: yellow; }
 .diff-chg { background-color: lime; }
-.diff-new:before,
-.diff-new:after
-    { content: "\2191" }
-.diff-chg:before, .diff-chg:after
-    { content: "\2195" }
 .diff-old { text-decoration: line-through; background-color: #FBB; }
-.diff-old:before,
-.diff-old:after
-    { content: "\2193" }
 </style>
 <script src="htmldiff-nav.js"></script>);
 	if ($opt_t) {
