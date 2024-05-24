@@ -200,7 +200,7 @@ sub markit {
 
 	my $diffcounter = 0;
 
-	open(FILE, qq(diff -d -I '^<\/\{0,1\}span[^>]*>$' --old-group-format="$old" --new-group-format="$new" --changed-group-format="$changed" --unchanged-group-format="$unchanged" $file1 $file2 |)) || die("Diff failed: $!");
+	open(FILE, qq(diff -d -I '^<\/\{0,1\}span[^>]*>' --old-group-format="$old" --new-group-format="$new" --changed-group-format="$changed" --unchanged-group-format="$unchanged" $file1 $file2 |)) || die("Diff failed: $!");
 #	system (qq(diff --old-group-format="$old" --new-group-format="$new" --changed-group-format="$changed" --unchanged-group-format="$unchanged" $file1 $file2 > /tmp/output));
 
 	my $state = 0;
